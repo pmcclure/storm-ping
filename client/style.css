@@ -1,0 +1,24 @@
+
+
+.container {
+  display: flex;
+}
+
+
+
+.left-half {
+	display: flex;
+  flex-direction: column;
+  
+  flex: 1;
+  
+}
+
+.right-half {
+	display: flex;
+  flex-direction: column;
+ 
+  flex: 1;
+ 
+}
+

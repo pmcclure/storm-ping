@@ -8,7 +8,14 @@ const app = express();
 
 require('./firebase.js');
 
-var hosts = ['dynamodb.us-west-1.amazonaws.com', 'dynamodb.eu-west-1.amazonaws.com', 'dynamodb.cn-north-1.amazonaws.com.cn'];
+var hosts = ['dynamodb.us-west-1.amazonaws.com', 
+			 'dynamodb.us-east-1.amazonaws.com',
+			 'dynamodb.eu-west-1.amazonaws.com',
+			 'dynamodb.eu-central-1.amazonaws.com',
+			 'dynamodb.ap-south-1.amazonaws.com',
+			 'dynamodb.ap-southeast-1.amazonaws.com',
+			 'dynamodb.ap-northeast-1.amazonaws.com',
+			 'dynamodb.cn-north-1.amazonaws.com.cn'];
 
 app.use(express.static(path.resolve(__dirname, '..', './client/build')));
 
@@ -35,8 +42,6 @@ firebase.auth().onAuthStateChanged(function (user) {
 		});
 	}
 });
-
-
 
 function pingEachHostInterval() {
 	hosts.forEach(function (host) {
