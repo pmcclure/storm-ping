@@ -17,6 +17,13 @@ var hosts = ['dynamodb.us-west-1.amazonaws.com',
 			 'dynamodb.ap-northeast-1.amazonaws.com',
 			 'dynamodb.cn-north-1.amazonaws.com.cn'];
 
+app.use(express.static(path.resolve(__dirname, '..', './client')));
+
+app.get('*', (req, res) => {
+	res.sendFile(path.resolve(__dirname, '..', './client', 'index.html'));
+});
+
+
 const firebaseRef = firebase.database().ref();
 const nodesRef = firebaseRef.child('nodes');
 
