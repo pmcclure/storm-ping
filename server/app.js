@@ -61,6 +61,6 @@ function pingEachHostInterval() {
 	});
 };
 
-setInterval(pingEachHostInterval, 1000);
+setInterval(pingEachHostInterval, 5000);
 
 module.exports = app;
