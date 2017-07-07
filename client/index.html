@@ -71,7 +71,7 @@
 						events: {
 							load: function () {
 
-								// set up the updating of the chart each 2 seconds
+								// set up the updating of the chart every 5 seconds
 								var series = this.series[0];
 								y = awsUsWestPing(cbf);
 								setInterval(function () {
@@ -104,7 +104,7 @@
 						formatter: function () {
 							return '<b>' + this.series.name + '</b><br/>' +
 								Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) + '<br/>' +
-								Highcharts.numberFormat(this.y, 2);
+								Highcharts.numberFormat(this.y, 0) + 'ms';
 						}
 					},
 					legend: {
@@ -168,7 +168,7 @@
 						events: {
 							load: function () {
 
-								// set up the updating of the chart each 2 seconds
+								// set up the updating of the chart every 5 seconds
 								var series = this.series[0];
 								y = awsUsEastPing(cbf);
 								setInterval(function () {
@@ -201,7 +201,7 @@
 						formatter: function () {
 							return '<b>' + this.series.name + '</b><br/>' +
 								Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) + '<br/>' +
-								Highcharts.numberFormat(this.y, 2);
+								Highcharts.numberFormat(this.y, 0) + 'ms';
 						}
 					},
 					legend: {
@@ -257,7 +257,7 @@
 					marginRight: 10,
 					events: {
 						load: function () {
-							// set up the updating of the chart each 2 seconds
+							// set up the updating of the chart every 5 seconds
 							var series = this.series[0];
 							y = awsIrelandPing(cbf);
 							setInterval(function () {
@@ -290,7 +290,7 @@
 					formatter: function () {
 						return '<b>' + this.series.name + '</b><br/>' +
 							Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) + '<br/>' +
-							Highcharts.numberFormat(this.y, 2);
+							Highcharts.numberFormat(this.y, 0) + 'ms';
 					}
 				},
 				legend: {
@@ -346,7 +346,7 @@
 					events: {
 						load: function () {
 
-							// set up the updating of the chart each 2 seconds
+							// set up the updating of the chart every 5 seconds
 							var series = this.series[0];
 							y = awsFrankfurtPing(cbf);
 							setInterval(function () {
@@ -379,7 +379,7 @@
 					formatter: function () {
 						return '<b>' + this.series.name + '</b><br/>' +
 							Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) + '<br/>' +
-							Highcharts.numberFormat(this.y, 2);
+							Highcharts.numberFormat(this.y, 0) + 'ms';
 					}
 				},
 				legend: {
@@ -435,7 +435,7 @@
 					events: {
 						load: function () {
 
-							// set up the updating of the chart each 2 seconds
+							// set up the updating of the chart every 5 seconds
 							var series = this.series[0];
 							y = awsMumbaiPing(cbf);
 							setInterval(function () {
@@ -468,7 +468,7 @@
 					formatter: function () {
 						return '<b>' + this.series.name + '</b><br/>' +
 							Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) + '<br/>' +
-							Highcharts.numberFormat(this.y, 2);
+							Highcharts.numberFormat(this.y, 0) + 'ms';
 					}
 				},
 				legend: {
@@ -524,7 +524,7 @@
 					events: {
 						load: function () {
 
-							// set up the updating of the chart each 2 seconds
+							// set up the updating of the chart every 5 seconds
 							var series = this.series[0];
 							y = awsSingaporePing(cbf);
 							setInterval(function () {
@@ -557,7 +557,7 @@
 					formatter: function () {
 						return '<b>' + this.series.name + '</b><br/>' +
 							Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) + '<br/>' +
-							Highcharts.numberFormat(this.y, 2);
+							Highcharts.numberFormat(this.y, 0) + 'ms';
 					}
 				},
 				legend: {
@@ -613,7 +613,7 @@
 					events: {
 						load: function () {
 
-							// set up the updating of the chart each 2 seconds
+							// set up the updating of the chart every 5 seconds
 							var series = this.series[0];
 							y = awsTokyoPing(cbf);
 							setInterval(function () {
@@ -646,7 +646,7 @@
 					formatter: function () {
 						return '<b>' + this.series.name + '</b><br/>' +
 							Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) + '<br/>' +
-							Highcharts.numberFormat(this.y, 2);
+							Highcharts.numberFormat(this.y, 0) + 'ms';
 					}
 				},
 				legend: {
@@ -710,7 +710,7 @@
 						events: {
 							load: function () {
 
-								// set up the updating of the chart each 2 seconds
+								// set up the updating of the chart every 5 seconds
 								var series = this.series[0];
 								y = awsBeijingPing(cbf);
 								setInterval(function () {
@@ -743,7 +743,7 @@
 						formatter: function () {
 							return '<b>' + this.series.name + '</b><br/>' +
 								Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) + '<br/>' +
-								Highcharts.numberFormat(this.y, 2);
+								Highcharts.numberFormat(this.y, 0) + 'ms';
 						}
 					},
 					legend: {
