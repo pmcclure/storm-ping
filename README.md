@@ -6,4 +6,4 @@ Using Node to ping several AWS region DynamoDB endpoints and storing the results
 
 The frontend is plain Javascript using Highcharts. 
 
-Here it is in action: https://stormping.mcclure.space/
+Here it is in action: ***Had to stop the site as it was going over the free usage tier***
